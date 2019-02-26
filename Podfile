@@ -6,11 +6,10 @@ target 'NaviMatchin' do
   use_frameworks!
   pod 'Firebase/Core'
   # Pods for NaviMatchin
-
-  pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   pod 'FirebaseUI/Storage'
-
+pod 'Firebase/Database'
+  pod 'SwiftyJSON', '~> 4.0'
 end

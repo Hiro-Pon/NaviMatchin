@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		27600CE0B1C97F72B3589334 /* Pods_NaviMatchin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7F9542CE991CF6016DA47A /* Pods_NaviMatchin.framework */; };
-		606F68272223CF6800F0F2B1 /* Image_input.png in Resources */ = {isa = PBXBuildFile; fileRef = 606F68262223CF6800F0F2B1 /* Image_input.png */; };
 		606F68292223EE2D00F0F2B1 /* AddNavigationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F68282223EE2D00F0F2B1 /* AddNavigationInfoViewController.swift */; };
 		609F7BE02223749900B80C2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609F7BDF2223749900B80C2A /* AppDelegate.swift */; };
 		609F7BE22223749900B80C2A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609F7BE12223749900B80C2A /* LoginViewController.swift */; };
@@ -16,11 +15,15 @@
 		609F7BE72223749E00B80C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609F7BE62223749E00B80C2A /* Assets.xcassets */; };
 		609F7BEA2223749E00B80C2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609F7BE82223749E00B80C2A /* LaunchScreen.storyboard */; };
 		609F7BF42223B0D900B80C2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 609F7BF32223B0D900B80C2A /* GoogleService-Info.plist */; };
+		D740BA112224429D0040F758 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D740BA102224429D0040F758 /* AuthAPI.swift */; };
+		D7463EA0222449EA006C55FF /* NavigationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7463E9F222449EA006C55FF /* NavigationAPI.swift */; };
+		D7463EA222245A87006C55FF /* EZFirebaseByKenty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7463EA122245A87006C55FF /* EZFirebaseByKenty.swift */; };
+		D7463EA62224766A006C55FF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7463EA52224766A006C55FF /* SearchViewController.swift */; };
+		D7463EA722248C25006C55FF /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7463EA32224752F006C55FF /* SearchAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B7F9542CE991CF6016DA47A /* Pods_NaviMatchin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaviMatchin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		606F68262223CF6800F0F2B1 /* Image_input.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image_input.png; sourceTree = "<group>"; };
 		606F68282223EE2D00F0F2B1 /* AddNavigationInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNavigationInfoViewController.swift; sourceTree = "<group>"; };
 		609F7BDC2223749900B80C2A /* NaviMatchin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaviMatchin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		609F7BDF2223749900B80C2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +35,11 @@
 		609F7BF32223B0D900B80C2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B36A77E7A0CE8B71EFCB6ECF /* Pods-NaviMatchin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaviMatchin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NaviMatchin/Pods-NaviMatchin.debug.xcconfig"; sourceTree = "<group>"; };
 		BA1B9A7DA61ABD8691B18E11 /* Pods-NaviMatchin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaviMatchin.release.xcconfig"; path = "Pods/Target Support Files/Pods-NaviMatchin/Pods-NaviMatchin.release.xcconfig"; sourceTree = "<group>"; };
+		D740BA102224429D0040F758 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		D7463E9F222449EA006C55FF /* NavigationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAPI.swift; sourceTree = "<group>"; };
+		D7463EA122245A87006C55FF /* EZFirebaseByKenty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZFirebaseByKenty.swift; sourceTree = "<group>"; };
+		D7463EA32224752F006C55FF /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
+		D7463EA52224766A006C55FF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,14 +63,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		606F68232223CEFF00F0F2B1 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				606F68262223CF6800F0F2B1 /* Image_input.png */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
 		609F7BD32223749900B80C2A = {
 			isa = PBXGroup;
 			children = (
@@ -84,7 +84,10 @@
 		609F7BDE2223749900B80C2A /* NaviMatchin */ = {
 			isa = PBXGroup;
 			children = (
-				606F68232223CEFF00F0F2B1 /* Images */,
+				D740BA102224429D0040F758 /* AuthAPI.swift */,
+				D7463E9F222449EA006C55FF /* NavigationAPI.swift */,
+				D7463EA32224752F006C55FF /* SearchAPI.swift */,
+				D7463EA122245A87006C55FF /* EZFirebaseByKenty.swift */,
 				609F7BF22223A95F00B80C2A /* VC */,
 				609F7BF12223A94100B80C2A /* storyboard */,
 				609F7BE62223749E00B80C2A /* Assets.xcassets */,
@@ -109,6 +112,7 @@
 			children = (
 				609F7BE12223749900B80C2A /* LoginViewController.swift */,
 				606F68282223EE2D00F0F2B1 /* AddNavigationInfoViewController.swift */,
+				D7463EA52224766A006C55FF /* SearchViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -185,7 +189,6 @@
 				609F7BEA2223749E00B80C2A /* LaunchScreen.storyboard in Resources */,
 				609F7BE72223749E00B80C2A /* Assets.xcassets in Resources */,
 				609F7BE52223749900B80C2A /* Main.storyboard in Resources */,
-				606F68272223CF6800F0F2B1 /* Image_input.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +225,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -234,6 +238,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -252,7 +257,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				609F7BE22223749900B80C2A /* LoginViewController.swift in Sources */,
+				D7463EA62224766A006C55FF /* SearchViewController.swift in Sources */,
+				D7463EA722248C25006C55FF /* SearchAPI.swift in Sources */,
+				D740BA112224429D0040F758 /* AuthAPI.swift in Sources */,
 				606F68292223EE2D00F0F2B1 /* AddNavigationInfoViewController.swift in Sources */,
+				D7463EA0222449EA006C55FF /* NavigationAPI.swift in Sources */,
+				D7463EA222245A87006C55FF /* EZFirebaseByKenty.swift in Sources */,
 				609F7BE02223749900B80C2A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,7 +413,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G38P4Z3EJZ;
 				INFOPLIST_FILE = NaviMatchin/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hiropon.NaviMatchin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -419,7 +432,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G38P4Z3EJZ;
 				INFOPLIST_FILE = NaviMatchin/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hiropon.NaviMatchin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
