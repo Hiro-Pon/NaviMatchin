@@ -13,8 +13,9 @@ import SwiftyJSON
 
 class SearchAPI{
     
+    //get user info (閲覧ちゅうい)
     public func search(placeName:String,completionHandler:@escaping (Any?)->Void){
-        var match = [String]()
+        var match = [[String]]()
         let ref = Database.database().reference()
         let path = ref.child("place").queryOrdered(byChild:"placeName").queryEqual(toValue: placeName)
         
@@ -35,15 +36,34 @@ class SearchAPI{
                     completionHandler(nil)
                 }else{
                     let response = JSON(snapshot.value!)
-                    print(response)
+                    //print(response)
                     for  (key, _) in response {
                         placeId = key
-                        print(response[placeId!]["accountID"])
+                        
+                        let PiroYaKentyPon1 = ref.child("user/\(response[placeId!]["accountID"])")
+                        //description
+                        let description = response[placeId!]["description"].string
+
+                        
+                        //accountId
+                        PiroYaKentyPon1.observe(.value, with:{ (snapshot: DataSnapshot) in
+                            if snapshot.value is NSNull{
+                                completionHandler(nil)
+                            }else{
+                                let response = JSON(snapshot.value!)
+                                print(response["firstName"])
+                                print(response["lastName"])
+                                print(description!)
+                                match.append(["\(response["firstName"])","\(response["lastName"])",description!])
+                                print(match)
+                                completionHandler(match)
+                            }
+                        })
                     }
                 }
             })
         }
-    )
+        )
         
     }
     

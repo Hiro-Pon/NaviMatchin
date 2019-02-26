@@ -25,7 +25,7 @@ class AuthAPI{
                     if error == nil && user != nil{
                         let userID = Auth.auth().currentUser!.uid
                         UserDefaults.standard.set(userID, forKey: "UID")
-                        ref.child("user/\(userID)").updateChildValues(["firstName":firstName,"lastName":lastName])
+                        ref.child("user/\(userID)").updateChildValues(["firstName":firstName,"lastName":lastName,"email":email])
                         //UserDefaults.standard.set(username, forKey: "USERNAME")
                         completionHandler(200)
                     }else{

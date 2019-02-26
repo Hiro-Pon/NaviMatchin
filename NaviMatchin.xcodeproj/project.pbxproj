@@ -84,12 +84,9 @@
 		609F7BDE2223749900B80C2A /* NaviMatchin */ = {
 			isa = PBXGroup;
 			children = (
-				D740BA102224429D0040F758 /* AuthAPI.swift */,
-				D7463E9F222449EA006C55FF /* NavigationAPI.swift */,
-				D7463EA32224752F006C55FF /* SearchAPI.swift */,
-				D7463EA122245A87006C55FF /* EZFirebaseByKenty.swift */,
-				609F7BF22223A95F00B80C2A /* VC */,
-				609F7BF12223A94100B80C2A /* storyboard */,
+				D71147D12225009800A20060 /* API */,
+				609F7BF22223A95F00B80C2A /* Controller */,
+				D71147D2222501CC00A20060 /* View */,
 				609F7BE62223749E00B80C2A /* Assets.xcassets */,
 				609F7BF32223B0D900B80C2A /* GoogleService-Info.plist */,
 				609F7BDF2223749900B80C2A /* AppDelegate.swift */,
@@ -99,22 +96,22 @@
 			path = NaviMatchin;
 			sourceTree = "<group>";
 		};
-		609F7BF12223A94100B80C2A /* storyboard */ = {
+		609F7BF12223A94100B80C2A /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
 				609F7BE32223749900B80C2A /* Main.storyboard */,
 			);
-			path = storyboard;
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		609F7BF22223A95F00B80C2A /* VC */ = {
+		609F7BF22223A95F00B80C2A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				609F7BE12223749900B80C2A /* LoginViewController.swift */,
 				606F68282223EE2D00F0F2B1 /* AddNavigationInfoViewController.swift */,
 				D7463EA52224766A006C55FF /* SearchViewController.swift */,
 			);
-			path = VC;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		A1B66ABC16BEFFBD9AEAF343 /* Frameworks */ = {
@@ -123,6 +120,25 @@
 				2B7F9542CE991CF6016DA47A /* Pods_NaviMatchin.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D71147D12225009800A20060 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D740BA102224429D0040F758 /* AuthAPI.swift */,
+				D7463E9F222449EA006C55FF /* NavigationAPI.swift */,
+				D7463EA32224752F006C55FF /* SearchAPI.swift */,
+				D7463EA122245A87006C55FF /* EZFirebaseByKenty.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D71147D2222501CC00A20060 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				609F7BF12223A94100B80C2A /* Storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

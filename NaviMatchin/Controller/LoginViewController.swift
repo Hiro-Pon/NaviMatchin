@@ -20,34 +20,28 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
     @IBOutlet var passwordSubTextFeild:UITextField!
     @IBOutlet var createBtn: UIButton!
     
-    lazy var db = Firestore.firestore()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
         firstNameTextFeld.addBorderBottom(height: 0.3, color: UIColor.white)
         familyNameTextFeld.addBorderBottom(height: 0.3, color: UIColor.white)
         emailTextFeild.addBorderBottom(height: 0.3, color: UIColor.white)
         passwordTextFeild.addBorderBottom(height: 0.3, color: UIColor.white)
         passwordSubTextFeild.addBorderBottom(height: 0.3, color: UIColor.white)
-        
         firstNameTextFeld.attributedPlaceholder = NSAttributedString(string: "First Name",attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         familyNameTextFeld.attributedPlaceholder = NSAttributedString(string: "Family Name",attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         emailTextFeild.attributedPlaceholder = NSAttributedString(string: "Email",attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         passwordTextFeild.attributedPlaceholder = NSAttributedString(string: "Password",attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         passwordSubTextFeild.attributedPlaceholder = NSAttributedString(string: "Password (Confirm)",attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
-        
         createBtn.layer.cornerRadius = 10
         createBtn.layer.borderWidth = 1
 
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        if Auth.auth().currentUser != nil {
-            self.performSegue(withIdentifier: "ToComform", sender: nil)
-        }
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        if Auth.auth().currentUser != nil {
+//            self.performSegue(withIdentifier: "ToComform", sender: nil)
+//        }
+//    }
     
     @IBAction func imageSetting(){
         let ImagePicker = UIImagePickerController()

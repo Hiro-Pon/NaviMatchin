@@ -209,6 +209,10 @@
                                                 <constraint firstItem="nKM-HX-JrO" firstAttribute="leading" secondItem="kY7-eP-MJm" secondAttribute="trailing" constant="8" id="xKX-J5-jb3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="nKM-HX-JrO" id="b2O-Q2-BlI"/>
+                                            <outlet property="nameLabel" destination="6Ne-WL-mH0" id="yyN-Ct-zyV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

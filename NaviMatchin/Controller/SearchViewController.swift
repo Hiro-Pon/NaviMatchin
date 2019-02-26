@@ -20,12 +20,7 @@ class SearchViewController: UIViewController,UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
         EZFirebaseByKenty.Search.search(placeName: searchBar.text!) { (status) in
-            print(status)
+            print(status!)
         }
     }
-    
-    
-    
-
-
 }
