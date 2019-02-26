@@ -51,10 +51,7 @@ class SearchAPI{
                                 completionHandler(nil)
                             }else{
                                 let response = JSON(snapshot.value!)
-                                print(response["firstName"])
-                                print(response["lastName"])
-                                print(description!)
-                                match.append(["\(response["firstName"])","\(response["lastName"])",description!])
+                                match.append(["\(response["firstName"])","\(response["lastName"])",description!,"\(response["email"])"])
                                 print(match)
                                 completionHandler(match)
                             }

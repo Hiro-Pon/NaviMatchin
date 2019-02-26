@@ -10,6 +10,8 @@ target 'NaviMatchin' do
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   pod 'FirebaseUI/Storage'
-pod 'Firebase/Database'
+  pod 'Firebase/Database'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'IQKeyboardManagerSwift'
+
 end

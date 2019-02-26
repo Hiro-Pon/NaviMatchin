@@ -37,11 +37,11 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
 
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        if Auth.auth().currentUser != nil {
-//            self.performSegue(withIdentifier: "ToComform", sender: nil)
-//        }
-//    }
+    override func viewDidAppear(_ animated: Bool) {
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "ToComform", sender: nil)
+        }
+    }
     
     @IBAction func imageSetting(){
         let ImagePicker = UIImagePickerController()

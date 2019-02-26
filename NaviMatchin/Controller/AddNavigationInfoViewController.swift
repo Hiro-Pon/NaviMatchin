@@ -30,4 +30,5 @@ class AddNavigationInfoViewController: UIViewController {
             EZFirebaseByKenty.Navigation.addNavigation(placeName: placeTextFeld.text!, description: descriptionTextView.text!)
         }
     }
+
 }
